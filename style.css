@@ -1,0 +1,79 @@
+*{
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  margin-top: 0;
+}
+body{
+            text-align: center;
+    }
+    h1{
+        color: rgb(224, 225, 166);
+        text-decoration: solid;
+        text-transform: capitalize;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+   .choice-button {
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(136, 132, 85);
+    background-color:rgb(144, 157, 124);
+    border-radius: 50px;
+    transition: transform 0.3s , background 0.3s;
+    cursor: pointer;
+    
+   
+   } 
+   .choice-button:active{
+    border: 2px solid rgb(20, 20, 21);
+    background-color: rgb(218, 255, 10);
+   }
+   .choice-image{
+    height: 100px;
+   }
+  .game-container{
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  .game-container{
+    position: relative;
+  }
+  .game-container::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
+  }
+  .game-container >*{
+    position: relative;
+    z-index: 1;
+
+  }
+  .display{
+    color: white;
+    text-decoration: solid;
+    text-transform: capitalize;
+    }
+    .reset{
+      border: 2px solid rgb(233, 231, 88);
+      height: 50px;
+      width: 50px;
+      background-color: rgb(94, 97, 83);
+      color: white;
+    }
+  .reset:active{
+    color: rgb(225, 28, 35);
+    background-color: rgb(14, 13, 13);
+    border: 2px solid blue;
+  }
